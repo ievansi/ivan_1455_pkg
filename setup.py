@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'timeNode = ivan_1455_pkg.timeNode:main',
+            'even_number_publisher = ivan_1455_pkg.even_number_publisher:main',
         ],
     },
 )
