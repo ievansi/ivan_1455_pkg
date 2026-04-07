@@ -1,0 +1,2 @@
+[console_scripts]
+timeNode = ivan_1455_pkg.timeNode:main
