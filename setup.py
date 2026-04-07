@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'first_node = ivan_1455_pkg.first_node:main',
         ],
     },
 )
