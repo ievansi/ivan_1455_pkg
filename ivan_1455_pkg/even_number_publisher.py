@@ -24,7 +24,7 @@ class EvenNumberPublisher(Node):
         self.publisher = self.create_publisher(Int32, self.topic_name, 10) #публикатор четных чисел
         self.overflow_publisher = self.create_publisher(Int32, self.overflow_topic, 10) #публикотор переполнения
         
-        stimer_period = 1.0 / self.freq
+        timer_period = 1.0 / self.freq
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.even_number = 0
