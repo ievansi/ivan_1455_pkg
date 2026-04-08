@@ -8,13 +8,21 @@ class OverflowListener(Node):
     def __init__(self):
         # Даём узлу
         super().__init__('overflow_listener')
+
+        # Объявляем параметры
+        self.declare_parameter('overflow_topic', 'overflow')
+        
+        # Читаем параметры
+        self.overflow_topic = self.get_parameter('overflow_topic').get_parameter_value().string_value
+        
+
         self.subscription = self.create_subscription(
             Int32,
             'overflow',
             self.callback,
             10
         )
-        self.get_logger().info("Слушатель переполнения запущеню Ожидание сообщений в топике /overflow...")
+        self.get_logger().info(f"Слушатель запущен. Слушает топик: {self.overflow_topic}")
 
     def callback(self, msg):
         self.get_logger().warn(f"ПЕРЕПОЛНЕНИЕ! Получено значение {msg.data}")

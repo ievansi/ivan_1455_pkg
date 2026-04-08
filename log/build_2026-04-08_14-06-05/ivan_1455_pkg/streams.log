@@ -1,0 +1,23 @@
+[0.396s] Invoking command in '/home/igsp-01/ros2_ws/src/ivan_1455_pkg': PYTHONPATH=/home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/ivan_1455_pkg build --build-base /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/build install --record /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/install.log --single-version-externally-managed install_data
+[0.519s] running egg_info
+[0.527s] writing build/ivan_1455_pkg/ivan_1455_pkg.egg-info/PKG-INFO
+[0.527s] writing dependency_links to build/ivan_1455_pkg/ivan_1455_pkg.egg-info/dependency_links.txt
+[0.528s] writing entry points to build/ivan_1455_pkg/ivan_1455_pkg.egg-info/entry_points.txt
+[0.528s] writing requirements to build/ivan_1455_pkg/ivan_1455_pkg.egg-info/requires.txt
+[0.528s] writing top-level names to build/ivan_1455_pkg/ivan_1455_pkg.egg-info/top_level.txt
+[0.544s] reading manifest file 'build/ivan_1455_pkg/ivan_1455_pkg.egg-info/SOURCES.txt'
+[0.545s] writing manifest file 'build/ivan_1455_pkg/ivan_1455_pkg.egg-info/SOURCES.txt'
+[0.545s] running build
+[0.545s] running build_py
+[0.545s] running install
+[0.549s] running install_lib
+[0.558s] running install_data
+[0.558s] copying launch/robot_system_launch.py -> /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/share/ivan_1455_pkg/launch
+[0.558s] running install_egg_info
+[0.567s] removing '/home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages/ivan_1455_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[0.567s] Copying build/ivan_1455_pkg/ivan_1455_pkg.egg-info to /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages/ivan_1455_pkg-0.0.0-py3.12.egg-info
+[0.568s] running install_scripts
+[0.630s] Installing even_number_publisher script to /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/ivan_1455_pkg
+[0.630s] Installing overflow_listener script to /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/ivan_1455_pkg
+[0.630s] writing list of installed files to '/home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/install.log'
+[0.648s] Invoked command in '/home/igsp-01/ros2_ws/src/ivan_1455_pkg' returned '0': PYTHONPATH=/home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/ivan_1455_pkg build --build-base /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/build install --record /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/install.log --single-version-externally-managed install_data
