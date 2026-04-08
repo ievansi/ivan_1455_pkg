@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'even_number_publisher = ivan_1455_pkg.even_number_publisher:main',
+            'overflow_listener = ivan_1455_pkg.overflow_listener:main',
         ],
     },
 )
