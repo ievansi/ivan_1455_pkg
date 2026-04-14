@@ -7,10 +7,7 @@ from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
     
-    # ============================================
-    # 1. ОБЪЯВЛЯЕМ АРГУМЕНТЫ (можно менять при запуске)
-    # ============================================
-    
+
     freq_arg = DeclareLaunchArgument(
         'publish_frequency',
         default_value='8.0',
@@ -36,22 +33,14 @@ def generate_launch_description():
     )
     
     
-    # ============================================
-    # 2. ПОЛУЧАЕМ ЗНАЧЕНИЯ АРГУМЕНТОВ
-    # ============================================
-    
     frequency = LaunchConfiguration('publish_frequency')
     threshold = LaunchConfiguration('overflow_threshold')
     topic_name = LaunchConfiguration('topic_name')
     overflow_topic = LaunchConfiguration('overflow_topic')
     
-    # ============================================
-    # 3. ОПИСЫВАЕМ УЗЛЫ
-    # ============================================
-    
     # Узел-публикатор чётных чисел
     even_publisher_node = Node(
-        package='ivan_1455_pkg',  # ЗАМЕНИТЕ на имя вашего пакета!
+        package='ivan_1455_pkg', 
         executable='even_number_publisher',
         name='even_pub',
         output='screen',  # Выводить логи в терминал
@@ -65,7 +54,7 @@ def generate_launch_description():
     
     # Узел-слушатель переполнения
     overflow_listener_node = Node(
-        package='ivan_1455_pkg',  # ЗАМЕНИТЕ на имя вашего пакета!
+        package='ivan_1455_pkg',  
         executable='overflow_listener',
         name='overflow_listener',
         output='screen',
@@ -73,10 +62,6 @@ def generate_launch_description():
             {'overflow_topic': overflow_topic},
         ]
     )
-    
-    # ============================================
-    # 4. ВОЗВРАЩАЕМ LAUNCHDESCRIPTION
-    # ============================================
     
     return LaunchDescription([
         freq_arg,

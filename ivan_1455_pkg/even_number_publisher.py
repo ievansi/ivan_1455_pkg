@@ -21,7 +21,7 @@ class EvenNumberPublisher(Node):
         self.topic = self.get_parameter('topic_name').value
         self.overflow_topic = self.get_parameter('overflow_topic').value
 
-        self.publisher = self.create_publisher(Int32, self.topic_name, 10) #публикатор четных чисел
+        self.publisher = self.create_publisher(Int32, self.topic, 10) #публикатор четных чисел
         self.overflow_publisher = self.create_publisher(Int32, self.overflow_topic, 10) #публикотор переполнения
         
         timer_period = 1.0 / self.freq
@@ -33,13 +33,13 @@ class EvenNumberPublisher(Node):
         self.get_logger().info("Публикатор чётных чисел запущен")
         self.get_logger().info(f"  - Частота: {self.freq} Гц")
         self.get_logger().info(f"  - Порог переполнения: {self.threshold}")
-        self.get_logger().info(f"  - Топик чисел: {self.topic_name}")
+        self.get_logger().info(f"  - Топик чисел: {self.topic}")
         self.get_logger().info(f"  - Топик переполнения: {self.overflow_topic}")
         self.get_logger().info("=" * 50)
 
   
     def timer_callback(self):
-        if self.even_number >= 100:
+        if self.even_number >= self.threshold:
             overflow_msg = Int32()
             overflow_msg.data = self.even_number
             self.overflow_publisher.publish(overflow_msg)
