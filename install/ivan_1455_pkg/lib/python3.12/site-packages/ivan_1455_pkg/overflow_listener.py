@@ -13,12 +13,12 @@ class OverflowListener(Node):
         self.declare_parameter('overflow_topic', 'overflow')
         
         # Читаем параметры
-        self.overflow_topic = self.get_parameter('overflow_topic').get_parameter_value().string_value
+        self.overflow_topic = self.get_parameter('overflow_topic').value
         
 
         self.subscription = self.create_subscription(
             Int32,
-            'overflow',
+            self.overflow_topic,
             self.callback,
             10
         )

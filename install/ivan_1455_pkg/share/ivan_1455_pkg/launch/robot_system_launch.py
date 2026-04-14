@@ -6,6 +6,10 @@ from launch.actions import DeclareLaunchArgument, OpaqueFunction
 from launch.substitutions import LaunchConfiguration
 
 def launch_setup(context, *args, **kwargs):
+    """
+    Эта функция вызывается во время запуска и получает доступ
+    к реальным значениям аргументов.
+    """
     # Получаем значение аргумента mode
     mode = LaunchConfiguration('mode').perform(context)
     

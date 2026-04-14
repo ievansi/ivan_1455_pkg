@@ -1,0 +1,29 @@
+[0.424s] Invoking command in '/home/igsp-01/ros2_ws/src/ivan_1455_pkg': PYTHONPATH=/home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/ivan_1455_pkg build --build-base /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/build install --record /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/install.log --single-version-externally-managed install_data
+[0.558s] running egg_info
+[0.567s] writing build/ivan_1455_pkg/ivan_1455_pkg.egg-info/PKG-INFO
+[0.567s] writing dependency_links to build/ivan_1455_pkg/ivan_1455_pkg.egg-info/dependency_links.txt
+[0.567s] writing entry points to build/ivan_1455_pkg/ivan_1455_pkg.egg-info/entry_points.txt
+[0.567s] writing requirements to build/ivan_1455_pkg/ivan_1455_pkg.egg-info/requires.txt
+[0.568s] writing top-level names to build/ivan_1455_pkg/ivan_1455_pkg.egg-info/top_level.txt
+[0.586s] reading manifest file 'build/ivan_1455_pkg/ivan_1455_pkg.egg-info/SOURCES.txt'
+[0.586s] writing manifest file 'build/ivan_1455_pkg/ivan_1455_pkg.egg-info/SOURCES.txt'
+[0.586s] running build
+[0.587s] running build_py
+[0.587s] copying ivan_1455_pkg/even_number_publisher.py -> /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/build/lib/ivan_1455_pkg
+[0.587s] copying ivan_1455_pkg/overflow_listener.py -> /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/build/lib/ivan_1455_pkg
+[0.587s] running install
+[0.590s] running install_lib
+[0.600s] copying /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/build/lib/ivan_1455_pkg/even_number_publisher.py -> /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages/ivan_1455_pkg
+[0.600s] copying /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/build/lib/ivan_1455_pkg/overflow_listener.py -> /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages/ivan_1455_pkg
+[0.600s] byte-compiling /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages/ivan_1455_pkg/even_number_publisher.py to even_number_publisher.cpython-312.pyc
+[0.600s] byte-compiling /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages/ivan_1455_pkg/overflow_listener.py to overflow_listener.cpython-312.pyc
+[0.601s] running install_data
+[0.601s] copying launch/robot_system_launch.py -> /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/share/ivan_1455_pkg/launch
+[0.601s] running install_egg_info
+[0.611s] removing '/home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages/ivan_1455_pkg-0.0.0-py3.12.egg-info' (and everything under it)
+[0.611s] Copying build/ivan_1455_pkg/ivan_1455_pkg.egg-info to /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages/ivan_1455_pkg-0.0.0-py3.12.egg-info
+[0.612s] running install_scripts
+[0.681s] Installing even_number_publisher script to /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/ivan_1455_pkg
+[0.681s] Installing overflow_listener script to /home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/ivan_1455_pkg
+[0.681s] writing list of installed files to '/home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/install.log'
+[0.697s] Invoked command in '/home/igsp-01/ros2_ws/src/ivan_1455_pkg' returned '0': PYTHONPATH=/home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/igsp-01/ros2_ws/src/ivan_1455_pkg/install/ivan_1455_pkg/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/ivan_1455_pkg build --build-base /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/build install --record /home/igsp-01/ros2_ws/src/ivan_1455_pkg/build/ivan_1455_pkg/install.log --single-version-externally-managed install_data
